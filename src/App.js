@@ -1,4 +1,5 @@
 import styles from './App.module.css';
+import axios from 'axios';
 
 const App = () => {
 
