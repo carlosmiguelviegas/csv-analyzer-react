@@ -3,7 +3,11 @@ import styles from './App.module.css';
 const App = () => {
 
   const handlerOnDrop = async event => {
-    // it was intentional
+    event.preventDefault();
+    const files = Array.from(event['dataTransfer']['files']);
+    const formData = new FormData();
+    formData.append('file', files[0]);
+    await axios.post('http://localhost:8000/analyze', formData, { 'content-type': 'multipart/form-data' });
  };
 
   return (
