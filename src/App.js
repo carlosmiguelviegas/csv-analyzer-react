@@ -2,9 +2,11 @@ import { useState } from 'react';
 import styles from './App.module.css';
 import axios from 'axios';
 
+const initialState = { isActive: false, isSuccess: false };
+
 const App = () => {
 
-  const [ active, setActive ] = useState(false);
+  const [ state, setState ] = useState(initialState);
 
   const handlerOnDrop = async event => {
     event.preventDefault();
