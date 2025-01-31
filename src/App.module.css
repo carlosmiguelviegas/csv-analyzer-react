@@ -15,6 +15,9 @@
   width: 500px;
   height: 178px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #808080;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.05);
@@ -23,5 +26,11 @@
 .active {
   border: 1px solid green;
   background-color: rgba(0, 255, 0, 0.05);
+}
+
+.checkMark {
+  color: green;
+  width: 28px;
+  height: 28px;
 }
     
