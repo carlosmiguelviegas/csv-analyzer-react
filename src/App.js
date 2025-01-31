@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <section className={styles.container}>
-      <section className={styles.section} onDragOver={(e) => e.preventDefault()} onDrop={(e) => handlerOnDrop(e)} ></section>
+      <section className={styles.section} onDragOver={(e) => e.preventDefault()} onDrop={(e) => handlerOnDrop(e)} onDragEnter={} onDragLeave={} ></section>
     </section>
   );
 
