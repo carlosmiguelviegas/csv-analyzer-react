@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const App = () => {
 
-  const [ enter, SetEnter ] = useState(false);
+  const [ active, setActive ] = useState(false);
 
   const handlerOnDrop = async event => {
     event.preventDefault();
@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <section className={styles.container}>
-      <section className={styles.section} onDragOver={(e) => e.preventDefault()} onDrop={(e) => handlerOnDrop(e)} onDragEnter={} onDragLeave={} ></section>
+      <section className={styles.section} onDragOver={(e) => e.preventDefault()} onDrop={(e) => handlerOnDrop(e)} onDragEnter={() => setActive(true)} onDragLeave={() => setActive(false)} ></section>
     </section>
   );
 
