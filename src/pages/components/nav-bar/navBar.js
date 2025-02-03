@@ -1,7 +1,13 @@
-const navBar = () => {
+import styles from './NavBar.module.css';
 
-  return ;
+const NavBar = () => {
+
+  return (
+    <section className={styles}>
+      <button>Log in</button>
+    </section>
+  );
 
 };
 
-export default navBar;
+export default NavBar;

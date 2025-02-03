@@ -1,9 +1,13 @@
+import NavBar from './pages/components/nav-bar/navBar';
 import Dashboard from './pages/Dashboard';
 
 const App = () => {
 
   return (
-    <Dashboard />
+    <>
+      <NavBar />
+      <Dashboard />
+    </>
   );
 
 }
