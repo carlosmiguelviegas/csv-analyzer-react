@@ -1,11 +1,11 @@
-import NavBar from './pages/components/nav-bar/navBar';
+import NavigationBar from './components/navigation-bar/NavigationBar';
 import Dashboard from './pages/Dashboard';
 
 const App = () => {
 
   return (
     <>
-      <NavBar />
+      <NavigationBar />
       <Dashboard />
     </>
   );
