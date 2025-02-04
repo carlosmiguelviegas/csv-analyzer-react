@@ -1,7 +1,11 @@
+import styles from './SignInDialog.module.css';
+
 const SignInDialog = () => {
 
   return (
-    <p>sign in modal</p>
+    <section className={styles.modal}>
+      <p>sign in modal</p>
+    </section>
   );
 
 };
