@@ -16,4 +16,5 @@
   border-radius: 10px;
   background-color: coral;
   box-sizing: border-box;
+  cursor: pointer;
 }
