@@ -1,6 +1,8 @@
 const SignInDialog = () => {
 
-  return ;
+  return (
+    <p>sign in modal</p>
+  );
 
 };
 
