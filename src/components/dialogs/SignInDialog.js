@@ -29,7 +29,7 @@ const SignInDialog = () => {
     <div className={styles.modal}>
       <section className={styles.container}>
         <h2>Sign in</h2>
-        <form>
+        <form onSubmit={submitHandler}>
           <label htmlFor=''>Email</label>
           <input type='email' name='email' value={loginForm['email']} onChange={changeHandler} />
           <label htmlFor=''>Password</label>
