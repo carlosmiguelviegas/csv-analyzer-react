@@ -18,6 +18,13 @@ const SignInDialog = () => {
   
   };
 
+  const submitHandler = e => {
+
+    e.preventDefault();
+    console.log(loginForm);
+  
+  };
+
   return (
     <div className={styles.modal}>
       <section className={styles.container}>
