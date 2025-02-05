@@ -7,6 +7,17 @@ const SignInDialog = () => {
 
   const [ loginForm, setLoginForm ] = useState(initialState);
 
+  const changeHandler = e => {
+
+    const { name, value } = e['target'];
+
+    setLoginForm({
+                    ...loginForm,
+                    [name]: value
+    });
+  
+  };
+
   return (
     <div className={styles.modal}>
       <section className={styles.container}>
