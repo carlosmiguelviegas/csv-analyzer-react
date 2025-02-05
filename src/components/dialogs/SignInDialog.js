@@ -1,11 +1,43 @@
+import { useState } from 'react';
 import styles from './SignInDialog.module.css';
+
+const initialState = { email: '', password: '' };
 
 const SignInDialog = () => {
 
+  const [ loginForm, setLoginForm ] = useState(initialState);
+
+  const changeHandler = e => {
+
+    const { name, value } = e['target'];
+
+    setLoginForm({
+                    ...loginForm,
+                    [name]: value
+    });
+  
+  };
+
+  const submitHandler = e => {
+
+    e.preventDefault();
+    console.log(loginForm);
+  
+  };
+
   return (
-    <section className={styles.modal}>
-      <p>sign in modal</p>
-    </section>
+    <div className={styles.modal}>
+      <section className={styles.container}>
+        <h2>Sign in</h2>
+        <form onSubmit={submitHandler}>
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' id='email' value={loginForm['email']} onChange={changeHandler} />
+          <label htmlFor='password'>Password</label>
+          <input type='password' name='password' id='password' value={loginForm['password']} onChange={changeHandler} />
+          <button type='submit'>Sign in</button>
+        </form>
+      </section>
+    </div>
   );
 
 };
