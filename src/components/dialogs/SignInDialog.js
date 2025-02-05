@@ -30,10 +30,10 @@ const SignInDialog = () => {
       <section className={styles.container}>
         <h2>Sign in</h2>
         <form onSubmit={submitHandler}>
-          <label htmlFor=''>Email</label>
-          <input type='email' name='email' value={loginForm['email']} onChange={changeHandler} />
-          <label htmlFor=''>Password</label>
-          <input type='password' name='password' value={loginForm['password']} onChange={changeHandler} />
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' id='email' value={loginForm['email']} onChange={changeHandler} />
+          <label htmlFor='password'>Password</label>
+          <input type='password' name='password' id='password' value={loginForm['password']} onChange={changeHandler} />
           <button type='submit'>Sign in</button>
         </form>
       </section>
