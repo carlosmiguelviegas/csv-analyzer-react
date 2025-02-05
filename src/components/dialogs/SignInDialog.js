@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import styles from './SignInDialog.module.css';
 
+const initialState = { email: '', password: '' };
+
 const SignInDialog = () => {
 
-  const [ loginForm, setLoginForm ] = useState();
+  const [ loginForm, setLoginForm ] = useState(initialState);
 
   return (
     <div className={styles.modal}>
