@@ -24,9 +24,9 @@ const SignInDialog = () => {
         <h2>Sign in</h2>
         <form>
           <label htmlFor=''>Email</label>
-          <input type='email' />
+          <input type='email' name='email' value={loginForm['email']} onChange={changeHandler} />
           <label htmlFor=''>Password</label>
-          <input type='password' />
+          <input type='password' name='password' value={loginForm['password']} onChange={changeHandler} />
           <button type='submit'>Sign in</button>
         </form>
       </section>
