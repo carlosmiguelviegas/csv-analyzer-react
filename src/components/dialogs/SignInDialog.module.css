@@ -1,7 +1,45 @@
 .modal {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  width: 25%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 115px;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  border-style: solid;
+  padding: 5px 0px;
+  cursor: pointer;
 }
