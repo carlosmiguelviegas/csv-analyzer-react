@@ -33,6 +33,7 @@ const SignInDialog = () => {
             <label htmlFor='password'>Password</label>
             <input type='password' name='password' id='password' value={loginForm['password']} onChange={changeHandler} />
           </article>
+          <hr />
           <div className={styles.buttonsContainer}>
             <button type='submit' className={styles.button}>Sign in</button>
           </div>
