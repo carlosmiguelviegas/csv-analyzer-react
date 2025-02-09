@@ -51,10 +51,16 @@ hr {
   width: 115px;
   line-height: 26px;
   font-size: 18px;
+  color: rgb(255 255 255);
   font-weight: 600;
   background-color: darkcyan;
+  border: 1px solid darkcyan;
   border-radius: 30px;
-  border-style: solid;
   padding: 5px 0px;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #333;
+  border: 1px solid #333;
 }
