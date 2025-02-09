@@ -22,11 +22,12 @@
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  top: 28px;
+  width: 50%;
+  margin: 22px auto;
+}
+
+.formGroup {
+  margin-bottom: 20px;
 }
 
 .buttonsContainer {
