@@ -2,10 +2,6 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
 }
@@ -16,9 +12,29 @@
   background-color: rgb(255, 255, 255);;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 20px;
   box-sizing: border-box;
+  position: relative;
+  top: 27vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closeIcon {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: darkgray;
+  position: relative;
+  top: -60px;
+  right: 10px;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .form {
@@ -28,6 +44,10 @@
 
 .formGroup {
   margin-bottom: 20px;
+}
+
+.label {
+  color: #333;
 }
 
 input {

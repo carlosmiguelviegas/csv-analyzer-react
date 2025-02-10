@@ -10,7 +10,7 @@ const NavigationBar = () => {
   return (
     <nav className={styles.bar}>
       <button className={styles.barButton} onClick={() => setDisplay(true)} >Log in</button>
-      {display && createPortal(<SignInDialog />, document.body)}
+      {display && createPortal(<SignInDialog  setDisplay={setDisplay} />, document.body)}
     </nav>
   );
 
