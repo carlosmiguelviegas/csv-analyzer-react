@@ -23,7 +23,9 @@ const SignInDialog = ({ setDisplay }) => {
   return (
     <div className={styles.modal}>
       <section className={styles.container}>
-        <h2>Sign in</h2>
+        <article className={styles.header}>
+          <h2>Sign in</h2><span onClick={() => setDisplay(false)}>x</span>
+        </article>
         <form onSubmit={submitHandler} className={styles.form}>
           <article className={styles.formGroup}>
             <label htmlFor='email'>Email</label>
