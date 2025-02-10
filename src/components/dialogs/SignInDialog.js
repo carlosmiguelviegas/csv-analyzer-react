@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './SignInDialog.module.css';
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const initialState = { email: '', password: '' };
 
@@ -24,7 +25,7 @@ const SignInDialog = ({ setDisplay }) => {
     <div className={styles.modal}>
       <section className={styles.container}>
         <article className={styles.header}>
-          <h2>Sign in</h2><span onClick={() => setDisplay(false)}>x</span>
+          <h2>Sign in</h2><IoCloseCircleOutline onClick={() => setDisplay(false)} />
         </article>
         <form onSubmit={submitHandler} className={styles.form}>
           <article className={styles.formGroup}>
