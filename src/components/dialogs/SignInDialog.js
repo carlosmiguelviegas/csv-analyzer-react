@@ -3,7 +3,7 @@ import styles from './SignInDialog.module.css';
 
 const initialState = { email: '', password: '' };
 
-const SignInDialog = () => {
+const SignInDialog = ({ setDisplay }) => {
 
   const [ loginForm, setLoginForm ] = useState(initialState);
 
