@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './SignInDialog.module.css';
-import { IoCloseCircleOutline } from "react-icons/io5";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const initialState = { email: '', password: '' };
