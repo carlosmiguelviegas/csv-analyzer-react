@@ -24,11 +24,9 @@ const Dashboard = () => {
  };
 
   return (
-    <section className={styles.container}>
-      <section className={`${styles.section} ${state['isActive'] ? styles.active : ''}`} onDragOver={(e) => handlerOnDragOver(e)} onDrop={(e) => handlerOnDrop(e)}
-        onDragEnter={() => setState({ ...state, isActive: true })} onDragLeave={() => setState({ ...state, isActive: false })} >
-          {state['isSuccess'] && <GiCheckMark className={styles.checkMark} />}
-      </section>
+    <section className={`${styles.section} ${state['isActive'] ? styles.active : ''}`} onDragOver={(e) => handlerOnDragOver(e)} onDrop={(e) => handlerOnDrop(e)}
+      onDragEnter={() => setState({ ...state, isActive: true })} onDragLeave={() => setState({ ...state, isActive: false })} >
+        {state['isSuccess'] && <GiCheckMark className={styles.checkMark} />}
     </section>
   );
 };
