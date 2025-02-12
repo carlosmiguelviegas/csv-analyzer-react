@@ -19,3 +19,8 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+
+.barButton:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
