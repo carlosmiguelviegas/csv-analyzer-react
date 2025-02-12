@@ -9,6 +9,7 @@
 
 .barButton {
   width: 4%;
+  min-width: 60px;
   height: 80%;
   color: ghostwhite;
   font-weight: 600;

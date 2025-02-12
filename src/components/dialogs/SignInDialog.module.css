@@ -8,7 +8,7 @@
 
 .container {
   width: 25%;
-  height: 44%;
+  height: 40%;
   background-color: rgb(255, 255, 255);;
   display: flex;
   flex-direction: column;
@@ -16,14 +16,12 @@
   box-sizing: border-box;
   position: relative;
   top: 27vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .title {
   color: #333;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
 
 .closeIcon {
@@ -31,7 +29,7 @@
   height: 1.3rem;
   color: darkgray;
   position: relative;
-  top: -60px;
+  top: -42px;
   right: 10px;
   margin-left: auto;
   cursor: pointer;
@@ -39,7 +37,7 @@
 
 .form {
   width: 50%;
-  margin: 22px auto;
+  margin: 10px auto;
 }
 
 .formGroup {
