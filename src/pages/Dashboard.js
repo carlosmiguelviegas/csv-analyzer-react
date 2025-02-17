@@ -19,7 +19,7 @@ const Dashboard = () => {
     const files = Array.from(event['dataTransfer']['files']);
     const formData = new FormData();
     formData.append('file', files[0]);
-    const { status } = await axios.post('http://localhost:8000/analyze', formData, { 'content-type': 'multipart/form-data' });
+    const { status } = await axios.post('http://localhost:8000/api/v1/upload/analyze', formData, { 'content-type': 'multipart/form-data' });
     setState({ ...state, isSuccess: status === 200 ? true : false });
  };
 
