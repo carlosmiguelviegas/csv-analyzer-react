@@ -1,3 +1,20 @@
+:root {
+  --login-button-color1: coral;
+  --login-button-color2: darkcyan;
+  --button-hover-color: #333;
+  --button-text-color: ghostwhite;
+  --modal-backdrop-color: rgba(0, 0, 0, 0.3);
+  --modal-container-color: rgb(255, 255, 255);
+  --title-and-label-color: darkcyan;
+  --divider-color: darkcyan;
+  --icon-color: darkgray;
+  --file-dropzone-background-color: rgba(0, 0, 0, 0.05);
+  --file-dropzone-border-color: #808080;
+  --file-dropzone-active-background-color: green;
+  --file-dropzone-active-border-color: rgba(0, 255, 0, 0.05);
+  --check-mark-color: green;
+}
+
 body {
   width: 100%;
   height: 100vh;
