@@ -3,6 +3,11 @@
   --login-button-color2: darkcyan;
   --button-hover-color: #333;
   --button-text-color: ghostwhite;
+  --modal-backdrop-color: rgba(0, 0, 0, 0.3);
+  --modal-container-color: rgb(255, 255, 255);
+  --title-and-label-color: darkcyan;
+  --divider-color: darkcyan;
+  --icon-color: darkgray;
 }
 
 body {

@@ -1,7 +1,7 @@
 .modal {
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background:  var(--modal-backdrop-color);
   position: fixed;
   top: 0;
 }
@@ -9,7 +9,7 @@
 .container {
   width: 25%;
   height: 40%;
-  background-color: rgb(255, 255, 255);;
+  background-color: var(--modal-container-color);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -20,14 +20,14 @@
 }
 
 .title {
-  color: #333;
+  color: var(--title-and-label-color);
   margin: 10px auto;
 }
 
 .closeIcon {
   width: 1.3rem;
   height: 1.3rem;
-  color: darkgray;
+  color: var(--icon-color);
   position: relative;
   top: -42px;
   right: 10px;
@@ -45,7 +45,7 @@
 }
 
 .label {
-  color: #333;
+  color: var(--title-and-label-color);
 }
 
 input {
@@ -54,7 +54,7 @@ input {
 }
 
 hr {
-  border: 1px solid var(--login-button-color2);
+  border: 1px solid var(--divider-color);
   margin: 0;
 }
 

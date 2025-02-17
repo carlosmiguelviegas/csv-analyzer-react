@@ -13,7 +13,7 @@
   height: 80%;
   color: var(--button-text-color);
   font-weight: 600;
-  border: 1px solid white;
+  border: 1px solid var(--login-button-color1);
   border-radius: 10px;
   background-color: var(--login-button-color1);
   box-sizing: border-box;
