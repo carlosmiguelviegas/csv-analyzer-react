@@ -15,7 +15,7 @@
   font-weight: 600;
   border: 1px solid white;
   border-radius: 10px;
-  background-color: coral;
+  background-color: var(--login-button-color1);
   box-sizing: border-box;
   cursor: pointer;
 }
