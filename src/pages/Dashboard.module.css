@@ -3,8 +3,8 @@
   min-width: 300px;
   height: 24%;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid #808080;
+  background-color: var(--file-dropzone-background-color);
+  border: 1px solid var(--file-dropzone-border-color);
   border-radius: 30px;
   position: relative;
   top: 25vh;
@@ -12,12 +12,12 @@
 }
 
 .active {
-  border: 1px solid green;
-  background-color: rgba(0, 255, 0, 0.05);
+  border: 1px solid var(--file-dropzone-active-background-color);
+  background-color: var(--file-dropzone-active-border-color);
 }
 
 .checkMark {
-  color: green;
+  color: var(--check-mark-color);
   width: 28px;
   height: 28px;
 }

@@ -8,6 +8,11 @@
   --title-and-label-color: darkcyan;
   --divider-color: darkcyan;
   --icon-color: darkgray;
+  --file-dropzone-background-color: rgba(0, 0, 0, 0.05);
+  --file-dropzone-border-color: #808080;
+  --file-dropzone-active-background-color: green;
+  --file-dropzone-active-border-color: rgba(0, 255, 0, 0.05);
+  --check-mark-color: green;
 }
 
 body {
