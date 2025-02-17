@@ -1,7 +1,8 @@
 :root {
   --login-button-color1: coral;
   --login-button-color2: darkcyan;
-  --button-hover-color: #333
+  --button-hover-color: #333;
+  --button-text-color: ghostwhite;
 }
 
 body {
