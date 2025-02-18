@@ -24,7 +24,12 @@ const SignInDialog = ({ setDisplay, setIsSignedIn }) => {
   const submitHandler = async e => {
     e.preventDefault();
     const { status } = await axios.post('http://localhost:8000/api/v1/auth/signin', loginForm);
-    status === 200 ? setIsSignedIn(true) : setIsSignedIn(false);
+    if (status === 200) {
+      setIsSignedIn(true);
+      setDisplay(false);
+    } else {
+      setIsSignedIn(false);
+    }
   };
 
   return (
