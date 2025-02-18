@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <NavigationBar setIsSignedIn={setIsSignedIn} />
-      <Dashboard />
+      {isSignedIn && <Dashboard />}
     </>
   );
 
