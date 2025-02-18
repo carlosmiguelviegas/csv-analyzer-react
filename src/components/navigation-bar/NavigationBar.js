@@ -10,6 +10,7 @@ const NavigationBar = ({ isSignedIn, setIsSignedIn }) => {
   return (
     <nav className={styles.bar}>
       {!isSignedIn && <button className={styles.barButton} onClick={() => setDisplay(true)} >Log in</button>}
+      {isSignedIn && <button className={styles.barButton} onClick={() => setIsSignedIn(false)} >Log out</button>}
       {display && createPortal(<SignInDialog  setDisplay={setDisplay} setIsSignedIn={setIsSignedIn} />, document.body)}
     </nav>
   );
