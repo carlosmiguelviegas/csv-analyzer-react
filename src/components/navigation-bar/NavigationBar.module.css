@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 10px;
-  box-sizing: border-box;
 }
 
 .barButton {
@@ -16,7 +15,6 @@
   border: 1px solid var(--login-button-color1);
   border-radius: 10px;
   background-color: var(--login-button-color1);
-  box-sizing: border-box;
   cursor: pointer;
 }
 
