@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import axios from 'axios';
+
 import styles from './SignInDialog.module.css';
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
@@ -19,7 +21,11 @@ const SignInDialog = ({ setDisplay, setIsSignedIn }) => {
   
   };
 
-  const submitHandler = e => e.preventDefault();
+  const submitHandler = async e => {
+    e.preventDefault();
+    const { status } = await axios.post('http://localhost:8000/api/v1/auth/signin', loginForm);
+    status === 200 ? setIsSignedIn(true) : setIsSignedIn(false);
+  };
 
   return (
     <div className={styles.modal}>
