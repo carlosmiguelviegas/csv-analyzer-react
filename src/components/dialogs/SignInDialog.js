@@ -4,7 +4,7 @@ import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const initialState = { email: '', password: '' };
 
-const SignInDialog = ({ setDisplay }) => {
+const SignInDialog = ({ setDisplay, setIsSignedIn }) => {
 
   const [ loginForm, setLoginForm ] = useState(initialState);
 
