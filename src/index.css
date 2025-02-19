@@ -1,6 +1,7 @@
 :root {
   --login-button-color1: coral;
   --login-button-color2: darkcyan;
+  --logout-button-color: #ff0000;
   --button-hover-color: #333;
   --button-text-color: ghostwhite;
   --modal-backdrop-color: rgba(0, 0, 0, 0.3);

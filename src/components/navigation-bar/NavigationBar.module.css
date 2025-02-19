@@ -6,19 +6,27 @@
   padding-right: 10px;
 }
 
-.barButton {
+.btn {
   width: 4%;
   min-width: 60px;
   height: 80%;
-  color: var(--button-text-color);
   font-weight: 600;
-  border: 1px solid var(--login-button-color1);
+  color: var(--button-text-color);
   border-radius: 10px;
-  background-color: var(--login-button-color1);
   cursor: pointer;
 }
 
-.barButton:hover {
+.signInButton {
+  border: 1px solid var(--login-button-color1);
+  background-color: var(--login-button-color1);
+}
+
+.signOutButton {
+  border: 1px solid var(--logout-button-color);
+  background-color: var(--logout-button-color);
+}
+
+.signInButton:hover, .signOutButton:hover {
   background-color: var(--button-hover-color);
   border: 1px solid var(--button-hover-color);
 }
