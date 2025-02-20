@@ -5,10 +5,11 @@
   --button-hover-color: #333;
   --button-text-color: ghostwhite;
   --modal-backdrop-color: rgba(0, 0, 0, 0.3);
-  --modal-container-color: rgb(255, 255, 255);
+  --modal-container-color: beige;
   --title-and-label-color: darkcyan;
   --divider-color: darkcyan;
   --icon-color: darkgray;
+  --dashboard-background-color: #fff;
   --file-dropzone-background-color: rgba(0, 0, 0, 0.05);
   --file-dropzone-border-color: #808080;
   --file-dropzone-active-background-color: green;
