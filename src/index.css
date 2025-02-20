@@ -5,7 +5,7 @@
   --button-hover-color: #333;
   --button-text-color: ghostwhite;
   --modal-backdrop-color: rgba(0, 0, 0, 0.3);
-  --modal-container-color: rgb(255, 255, 255);
+  --modal-container-color: #fff;
   --title-and-label-color: darkcyan;
   --divider-color: darkcyan;
   --icon-color: darkgray;
@@ -33,7 +33,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(darkblue, darkcyan);
+  background: linear-gradient(45deg, var(--body-background-color1), var(--body-background-color2));
 }
 
 code {
