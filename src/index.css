@@ -10,6 +10,8 @@
   --divider-color: darkcyan;
   --icon-color: darkgray;
   --file-dropzone-background-color: rgba(0, 0, 0, 0.05);
+  --body-background-color1: darkblue;
+  --body-background-color2: darkcyan;
   --file-dropzone-border-color: #808080;
   --file-dropzone-active-background-color: green;
   --file-dropzone-active-border-color: rgba(0, 255, 0, 0.05);
@@ -31,6 +33,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(darkblue, darkcyan);
 }
 
 code {
